@@ -1,0 +1,331 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    width: 960px;
+    height: 600px;
+    background-color: black;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.col-element {
+    width: 250px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 20px;
+    left: 0;
+}
+
+.col-time {
+    font-size: 2rem;
+    color: white;
+}
+
+.col-score {
+    font-size: 2rem;
+    color: white;
+}
+
+.col-fail {
+    font-size: 2rem;
+    color: white;
+}
+
+.col-player {
+    font-size: 2rem;
+    color: white;
+}
+
+.col-menu1 {
+    width: 200px;
+    background-color: gray;
+    height: 300px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+}
+
+.title-game {
+    font-size: 1.5rem;
+    color: white;
+}
+
+.restart {
+    margin-top: 20px;
+    margin-bottom: 15px;
+    font-size: 1rem;
+    color: white;
+    cursor: pointer;
+}
+
+.quit {
+    cursor: pointer;
+    font-size: 1rem;
+    color: white;
+}
+
+canvas {
+    background-color: rgb(49, 49, 49);
+}
+
+.key {
+    position: absolute;
+    bottom: 10px;
+    z-index: 999;
+}
+
+.col-line-type {
+    position: absolute;
+    width: 400px;
+    height: 20px;
+    bottom: 132px;
+    background-color: gray;
+    border: 1px solid white;
+    display: flex;
+}
+
+.line:nth-child(1) {
+    width: 100px;
+    height: 100%;
+    background-color: white;
+    opacity: 0;
+}
+
+.line:nth-child(2) {
+    width: 100px;
+    height: 100%;
+    background-color: white;
+    opacity: 0;
+}
+
+.line:nth-child(3) {
+    width: 100px;
+    height: 100%;
+    background-color: white;
+    opacity: 0;
+}
+
+.line:nth-child(4) {
+    width: 100px;
+    height: 100%;
+    background-color: white;
+    opacity: 0;
+}
+
+.box-type {
+    width: 400px;
+    height: 132px;
+    position: absolute;
+    bottom: 0px;
+    display: flex;
+    gap: 3px;
+}
+
+.box:nth-child(2) {
+    width: 133px;
+    height: 132px;
+    background-color: rgb(1, 118, 118);
+}
+
+.box:nth-child(3) {
+    width: 133px;
+    height: 132px;
+    background-color: rgb(101, 17, 149);
+}
+
+.box:nth-child(4) {
+    width: 133px;
+    height: 132px;
+    background-color: rgb(1, 118, 118);
+}
+
+.box:nth-child(1) {
+    width: 133px;
+    height: 132px;
+    background-color: rgb(101, 17, 149);
+
+}
+
+.popup-screen-awal {
+    width: 960px;
+    height: 600px;
+    background-color: black;
+    position: absolute;
+    z-index: 99999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.col-content-screen {
+    width: 350px;
+    height: 300px;
+    padding: 30px;
+    background-color: rgb(61, 61, 61);
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    font-size: 1.5rem;
+    color: white;
+}
+
+.col-angka {
+    color: white;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.username {
+    width: 100%;
+    padding: 8px 10px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+
+.play {
+    width: 100px;
+    padding: 8px 0;
+    background-color: red;
+    margin: 0 auto;
+    color: white;
+    border: none;
+
+}
+
+
+.popup-pause {
+    width: 960px;
+    height: 600px;
+    background-color: rgba(0, 0, 0, 0.816);
+    position: absolute;
+    z-index: 99999;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.col-content-pause {
+    width: 350px;
+    height: 300px;
+    padding: 30px;
+    background-color: rgb(61, 61, 61);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.title-pause {
+    font-size: 1.5rem;
+    color: white;
+}
+
+.col-btn-pause {
+    margin-top: 30px;
+    display: flex;
+
+}
+
+.continue {
+    width: 100px;
+    padding: 8px 0;
+    background-color: transparent;
+    border: 2px solid white;
+    margin: 0 auto;
+    color: white;
+    cursor: pointer;
+
+}
+
+.restartGameOver {
+    width: 100px;
+    padding: 8px 0;
+    background-color: red;
+    margin: 0 auto;
+    color: white;
+    border: none;
+    cursor: pointer;
+
+}
+
+.popup-gameover {
+    width: 960px;
+    height: 600px;
+    background-color: rgba(0, 0, 0, 0.925);
+    position: absolute;
+    z-index: 99999;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.col-content-gameover {
+    width: 350px;
+    height: 300px;
+    padding: 30px;
+    background-color: rgb(61, 61, 61);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.col-info {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    color: white;
+    gap: 5px;
+    margin-top: 20px;
+    font-size: 1.3rem;
+}
+
+.restartGameOver2 {
+    width: 100px;
+    padding: 8px 0;
+    background-color: red;
+    margin: 0 auto;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+}
+.timer-screen{
+    font-size: 5rem;
+    color: white;
+display: flex;
+    z-index: 99999;
+}
+.popup-timer-screen{
+width: 960px;
+    height: 600px;
+    background-color: rgba(0, 0, 0, 0.575);
+    position: absolute;
+    z-index: 9999;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}

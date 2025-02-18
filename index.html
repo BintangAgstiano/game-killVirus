@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="content">
+
+            <div class="popup-screen-awal">
+                <div class="col-content-screen">
+                    <div class="title">Instruction Virus Player</div>
+                    <div class="col-angka">
+                        <div>1. Input username and click play</div>
+                        <div>2. Destroy virus with D F J K Keys</div>
+                        <div>3. Input username and click play</div>
+                    </div>
+                    <input type="text" class="username" placeholder="Input username">
+                    <button class="play">Play</button>
+                </div>
+            </div>
+            <div class="popup-pause">
+                <div class="col-content-pause">
+                    <div class="title-pause">Paused</div>
+                    <div class="col-btn-pause">
+                        <button class="continue">Continue</button>
+                        <button class="restartGameOver">Restart</button>
+
+                    </div>
+                </div>
+            </div>
+            <div class="popup-gameover">
+                <div class="col-content-gameover">
+                    <div class="title-pause">Game Over</div>
+                    <div class="col-info">
+                        <div>time : <span class="timeGameOver">00</span></div>
+                        <div>score : <span class="scoreGameOver">00</span></div>
+                        <div>player : <span class="playerGameOver">00</span></div>
+                    </div>
+
+                    <button class="restartGameOver2">Restart</button>
+
+
+                </div>
+            </div>
+
+            <div class="col-element">
+                <div class="col-time">Time : <span class="timer">12:00</span> </div>
+                <div class="col-score">Score : <span class="score">12</span> </div>
+                <div class="col-fail">Fail : <span class="fail">12</span> </div>
+                <div class="col-player">Player : <span class="player-name">bintang</span> </div>
+                <div class="col-menu1">
+                    <div class="title-game">Virus Slayer</div>
+                    <div class="restart">Restart</div>
+                    <div class="quit">Quit</div>
+                </div>
+            </div>
+            <div class="popup-timer-screen">
+                <div class="timer-screen">3</div>
+            </div>
+            <canvas></canvas>
+            <div class="col-line-type">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <img class="key" src="./images/d.png" width="370" alt="">
+            <div class="box-type">
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
